@@ -8,7 +8,7 @@ plugins {
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
-val jdaVersion = "5.2.1"
+val jdaVersion = "5.2.2"
 
 application {
     mainClass = "org.example.Bot"
@@ -22,6 +22,7 @@ dependencies {
     implementation("net.dv8tion:JDA:$jdaVersion")
     implementation("ch.qos.logback:logback-classic:1.5.12")
     testImplementation(platform("org.junit:junit-bom:5.11.4"))
+
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.mockito:mockito-core:5.+")
     implementation(kotlin("stdlib-jdk8"))
